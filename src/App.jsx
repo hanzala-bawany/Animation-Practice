@@ -1,7 +1,7 @@
-import { useState } from 'react'
 import './App.css'
-import Home from './components/Home'
 import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home'
+import Home2 from './pages/Home2'
 
 function App() {
  
@@ -10,7 +10,8 @@ function App() {
     <>
     <Routes>
 
-      <Route path="/firstClass" element={<Home />} />
+      <Route path="/firstDay" element={<Home />} />
+      <Route path="/secondDay" element={<Home2 />} />
 
     </Routes>
     </>
