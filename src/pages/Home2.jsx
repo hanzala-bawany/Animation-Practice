@@ -18,14 +18,13 @@ const [random , setRandom] =  useState(0)
 //     opacity : 0.5
 //   }
 
+
     useGSAP(() => {
         // gsap.from(".box",animation2)  // yani gsap ki css se anuimation start karo or actual css pe anuimation khatam karo
         // gsap.to(".box",animation2)     // yani actual css se anuimation start karo or gsap ki css pe anuimation khatam karo
         gsap.to(circle.current , {
             x : random,
-            // scale :2,
             duration : 1,
-            // delay :0.1,
         })
     },[random])
 
