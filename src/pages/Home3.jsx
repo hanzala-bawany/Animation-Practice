@@ -12,9 +12,9 @@ const Home3 = () => {
     useGSAP(() => {
 
         gsap.to(box.current , {
-            x : horizontal,
-            y : vertical , 
-            rotate : ghum , 
+            x : horizontal || 300, // first time chalne ke lie 300 di he take first render per animation chale kuch na kuch 300 , 200 , 120
+            y : vertical || 200, 
+            rotate : ghum || 120 , 
             duration: 0.8,
         })
 
